@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Empowering youth and women through community-driven development initiatives in Kenya." />
+  <meta name="keywords" content="youth, women, empowerment, development, Kenya, foundation, donations, volunteering" />
+  <meta name="author" content="Your Foundation Name" />
+  <title>Your Foundation Name | Empowering Change</title>
+  <link rel="stylesheet" href="shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main Navigation">
+          <div class="container nav-wrapper">
+            <a href="index.html" class="brand" aria-label="Homepage">EnableLives</a>
+            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
+              <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about-mission">About & Mission</a></li>
+              <li><a href="donate.html">Donate</a></li>
+               <li><a href="donate.html">Donate</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+
+
+
+<section class="shop-hero-slider">
+  <div class="slide active" style="background-image: url('images/71b28XlzOpL.jpg');">
+    <div class="overlay">
+      <div class="content">
+        <h1>Shop with Purpose</h1>
+        <p>Every item you buy supports people with disabilities.</p>
+        <a href="#products" class="btn">Explore Products <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('images/handmade.jpg');">
+    <div class="overlay">
+      <div class="content">
+        <h1>Empower Through Shopping</h1>
+        <p>Handmade goods with powerful stories behind them.</p>
+        <a href="#products" class="btn">Support Now <i class="fas fa-heart"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="slide" style="background-image: url('images/cprogram.jpg');">
+    <div class="overlay">
+      <div class="content">
+        <h1>Make Every Coin Count</h1>
+        <p>Proceeds go directly to community empowerment programs.</p>
+        <a href="#products" class="btn">Get Started <i class="fas fa-shopping-bag"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="shop-section">
+  <div class="shop-header">
+    <h2>Assistive Equipment Store</h2>
+    <p>Empowering every ability – explore tools that make a difference.</p>
+  </div>
+
+  <!-- 🔘 Filter Tabs -->
+  <div class="shop-filters">
+    <div class="category-tabs">
+      <button class="tab active" data-category="all">All</button>
+      <button class="tab" data-category="mobility">Mobility</button>
+      <button class="tab" data-category="visual">Visual</button>
+      <button class="tab" data-category="hearing">Hearing</button>
+    </div>
+    
+    <!-- 🔍 Search Input -->
+    <div class="search-box">
+      <input type="text" id="productSearch" placeholder="Search assistive products...">
+    </div>
+  </div>
+
+  <!-- 🛒 Product Grid -->
+  <div class="product-grid">
+    <!-- Product Card Example -->
+    <div class="product-card" data-category="mobility" data-name="wheelchair">
+      <img src="images/wheelchair.jpg" alt="Wheelchair">
+      <div class="product-info">
+        <h3>Wheelchair</h3>
+        <p class="description">Durable wheelchair for enhanced mobility and comfort.</p>
+        <p class="price">Ksh 15,000</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="visual" data-name="white cane">
+      <img src="images/white-cane.jpg" alt="White Cane">
+      <div class="product-info">
+        <h3>White Cane</h3>
+        <p class="description">Folding cane for the visually impaired with ergonomic grip.</p>
+        <p class="price">Ksh 1,000</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="hearing" data-name="hearing aid">
+      <img src="images/hearing-aid.jpg" alt="Hearing Aid">
+      <div class="product-info">
+        <h3>Hearing Aid</h3>
+        <p class="description">Rechargeable digital hearing aid with background noise cancelation.</p>
+        <p class="price">Ksh 10,000</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <!-- Add more products... -->
+  </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Cart Sidebar -->
+<aside id="cartSidebar" class="cart-sidebar" aria-label="Shopping Cart" aria-hidden="true" role="dialog">
+  <h2>Your Cart</h2>
+  <ul id="cartItems" class="cart-items" role="list" aria-live="polite" aria-relevant="additions removals">
+    <!-- Cart items will be injected here dynamically -->
+  </ul>
+  <div class="cart-total" aria-live="polite" aria-atomic="true">
+    <strong>Total:</strong> Ksh <span id="cartTotal">0</span>
+  </div>
+  <button id="clearCartBtn" class="action-btn clear-btn" disabled aria-disabled="true">Clear Cart</button>
+  <button id="proceedPayBtn" class="action-btn pay-btn" disabled aria-disabled="true">Proceed to Pay</button>
+  <button id="closeCartBtn" class="close-btn" aria-label="Close Cart Sidebar">×</button>
+</aside>
+
+
+<!-- Cart Toggle Button -->
+<button id="openCartBtn" class="open-cart-btn" aria-label="Open Cart">
+  🛒 Cart <span id="cartCount" class="cart-count">0</span>
+</button>
+
+
+
+      
+
+
+
+      <footer class="site-footer" id="footer">
+        <div class="container footer-grid">
+          
+          <!-- Logo & Mission -->
+          <div class="footer-brand">
+            <h3>EmpowerAbility Foundation</h3>
+            <p>Empowering people with disabilities through inclusion, support, and sustainable development.</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="get-involved.html">Get Involved</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><i class="fas fa-envelope"></i> info@empowerability.org</p>
+            <p><i class="fas fa-phone-alt"></i> +254 712 345 678</p>
+            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+          </div>
+      
+          <!-- Social Media -->
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube" aria-label="YouTube"></i></a>
+            </div>
+          </div>
+      
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 EmpowerAbility Foundation. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      
+<script src="shop.js"></script>
+</body>
+</html>
