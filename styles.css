@@ -28,13 +28,53 @@
     align-items: center;
     padding: 0 1rem;
   }
-  .brand {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-    letter-spacing: 1px;
-  }
+
+
+
+/* Logo and Branding */
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  color: #005baa;
+  font-weight: 700;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+
+
+
+
+
   .nav-toggle {
     background: none;
     border: none;
