@@ -28,7 +28,7 @@
     align-items: center;
     padding: 0 1rem;
   }
- /* Logo and Branding */
+/* Logo and Branding */
 .brand {
   display: flex;
   align-items: center;
@@ -49,6 +49,12 @@
   font-size: 1.4rem;
   color: #005baa;
   font-weight: 700;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-wrapper {
