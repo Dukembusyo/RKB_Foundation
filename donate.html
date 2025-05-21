@@ -18,26 +18,105 @@
 </head>
 <body>
 
-    <header>
-        <nav class="navbar" role="navigation" aria-label="Main Navigation">
-          <div class="container nav-wrapper">
-                      <a href="index.html" class="brand" aria-label="Homepage">
-  <img src="images/LOGO.jpeg" alt="EnableLives Logo" class="logo" />
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="nav-container">
+               <a href="index.html" class="brand" aria-label="Homepage">
+            <img src="images/LOGO.jpeg" alt="EnableLives Logo" class="logo" />
   <span class="brand-name">RKB</span>
 </a>
-            <button class="nav-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-menu">
-              <span class="hamburger"></span>
-            </button>
-            <ul class="nav-menu" id="nav-menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#about-mission">About & Mission</a></li>
-              <li><a href="donate.html">Donate</a></li>
-              <li><a href="shop.html">shop</a></li>
-              <li><a href="#footer">Contact</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
+
+    <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+      ☰
+    </button>
+
+    <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+
+      <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown1" role="menuitem">
+          About & Mission ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown1" role="menu" hidden>
+          <li role="none"><a href="#about-heading" role="menuitem">Our Story</a></li>
+          <li role="none"><a href="#mission" role="menuitem">Mission</a></li>
+          <li role="none"><a href="#" role="menuitem">Team</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown2" role="menuitem">
+          Get Involved ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
+          <li role="none"><a href="#" role="menuitem">Volunteer</a></li>
+          <li role="none"><a href="#" role="menuitem">Fundraise</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown3" role="menuitem">
+          Shop ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown3" role="menu" hidden>
+          <li role="none"><a href="#" role="menuitem">Merchandise</a></li>
+          <li role="none"><a href="#" role="menuitem">Gifts</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact" role="menuitem">Contact</a></li>
+
+      <li class="nav-btns">
+        <button id="loginBtn" class="btn login-btn" role="menuitem">Login</button>
+        <button id="registerBtn" class="btn register-btn" role="menuitem">Register</button>
+        <a href="donate.html" class="btn donate-btn" role="menuitem">Donate</a>
+      </li>
+
+      <li class="accessibility">
+        <button id="disabilityToggle" aria-label="Toggle high contrast mode" role="menuitem">♿</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
+  <div class="modal-content">
+    <button class="close-btn" aria-label="Close login form">&times;</button>
+    <h2 id="loginTitle">Login</h2>
+    <form id="loginForm" novalidate>
+      <label for="loginEmail">Email</label>
+      <input type="email" id="loginEmail" name="loginEmail" required />
+
+      <label for="loginPassword">Password</label>
+      <input type="password" id="loginPassword" name="loginPassword" required />
+
+      <button type="submit" class="btn submit-btn">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- Register Modal -->
+<div id="registerModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="registerTitle" hidden>
+  <div class="modal-content">
+    <button class="close-btn" aria-label="Close register form">&times;</button>
+    <h2 id="registerTitle">Register</h2>
+    <form id="registerForm" novalidate>
+      <label for="registerName">Full Name</label>
+      <input type="text" id="registerName" name="registerName" required />
+
+      <label for="registerEmail">Email</label>
+      <input type="email" id="registerEmail" name="registerEmail" required />
+
+      <label for="registerPassword">Password</label>
+      <input type="password" id="registerPassword" name="registerPassword" required />
+
+      <label for="registerConfirmPassword">Confirm Password</label>
+      <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required />
+
+      <button type="submit" class="btn submit-btn">Register</button>
+    </form>
+  </div>
+</div>
 
 
 
