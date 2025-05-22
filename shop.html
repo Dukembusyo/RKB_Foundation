@@ -17,7 +17,6 @@
 
 </head>
 <body>
-
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
   <div class="nav-container">
                <a href="index.html" class="brand" aria-label="Homepage">
@@ -39,7 +38,7 @@
         <ul class="dropdown-menu" id="dropdown1" role="menu" hidden>
           <li role="none"><a href="#about-heading" role="menuitem">Our Story</a></li>
           <li role="none"><a href="#mission" role="menuitem">Mission</a></li>
-          <li role="none"><a href="#" role="menuitem">Leadership</a></li>
+          <li role="none"><a href="#leadership" role="menuitem">Leadership</a></li>
         </ul>
       </li>
 
@@ -48,23 +47,15 @@
           Get Involved ▾
         </button>
         <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
-          <li role="none"><a href="#" role="menuitem">Partner with us</a></li>
-          <li role="none"><a href="#" role="menuitem">Volunteer</a></li>
-          <li role="none"><a href="#" role="menuitem">Fundraise</a></li>
+          <li role="none"><a href="partner.html" role="menuitem">Partner with us</a></li>
+          <li role="none"><a href="contact.html" role="menuitem">Volunter</a></li>
+          <li role="none"><a href="donate.html" role="menuitem">Fundraise/a></li>
         </ul>
       </li>
 
-      <li class="dropdown" role="none">
-        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown3" role="menuitem">
-          Shop ▾
-        </button>
-        <ul class="dropdown-menu" id="dropdown3" role="menu" hidden>
-          <li role="none"><a href="#" role="menuitem">Merchandise</a></li>
-          <li role="none"><a href="#" role="menuitem">Gifts</a></li>
-        </ul>
-      </li>
+      <li><a href="#contact" role="menuitem">shop</a></li>
 
-      <li><a href="#contact" role="menuitem">Contact</a></li>
+      <li><a href="contact.html" role="menuitem">Contact</a></li>
 
       <li class="nav-btns">
         <button id="loginBtn" class="btn login-btn" role="menuitem">Login</button>
@@ -122,125 +113,88 @@
 
 
 
-<section class="shop-hero-slider">
-  <div class="slide active" style="background-image: url('images/71b28XlzOpL.jpg');">
-    <div class="overlay">
-      <div class="content">
-        <h1>Shop with Purpose</h1>
-        <p>Every item you buy supports people with disabilities.</p>
-        <a href="#products" class="btn">Explore Products <i class="fas fa-arrow-right"></i></a>
-      </div>
+<!-- Hero Section -->
+<section class="shop-hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Explore Empowering Products</h1>
+      <p>Every item you buy supports persons with disabilities in achieving independence and dignity.</p>
+      <a href="#shop-grid" class="shop-now-btn">Shop Now</a>
     </div>
-  </div>
-  <div class="slide" style="background-image: url('images/handmade.jpg');">
-    <div class="overlay">
-      <div class="content">
-        <h1>Empower Through Shopping</h1>
-        <p>Handmade goods with powerful stories behind them.</p>
-        <a href="#products" class="btn">Support Now <i class="fas fa-heart"></i></a>
-      </div>
-    </div>
-  </div>
-  <div class="slide" style="background-image: url('images/cprogram.jpg');">
-    <div class="overlay">
-      <div class="content">
-        <h1>Make Every Coin Count</h1>
-        <p>Proceeds go directly to community empowerment programs.</p>
-        <a href="#products" class="btn">Get Started <i class="fas fa-shopping-bag"></i></a>
-      </div>
+    <div class="hero-image">
+      <img src="images/diable.jpg" alt="Empowerment Hero Image">
     </div>
   </div>
 </section>
 
-
-
-
-
-
-<section class="shop-section">
+<!-- Shop Section -->
+<section class="shop-section" id="shop-grid">
   <div class="shop-header">
     <h2>Assistive Equipment Store</h2>
     <p>Empowering every ability – explore tools that make a difference.</p>
   </div>
 
-  <!-- 🔘 Filter Tabs -->
-  <div class="shop-filters">
-    <div class="category-tabs">
+  <!-- Shop Controls -->
+  <div class="shop-controls">
+    <div class="tabs">
       <button class="tab active" data-category="all">All</button>
       <button class="tab" data-category="mobility">Mobility</button>
       <button class="tab" data-category="visual">Visual</button>
       <button class="tab" data-category="hearing">Hearing</button>
     </div>
-    
-    <!-- 🔍 Search Input -->
-    <div class="search-box">
-      <input type="text" id="productSearch" placeholder="Search assistive products...">
-    </div>
+    <input type="text" id="productSearch" placeholder="Search products...">
   </div>
 
-  <!-- 🛒 Product Grid -->
-  <div class="product-grid">
-    <!-- Product Card Example -->
+  <!-- Product Grid -->
+  <div class="product-grid" id="products">
     <div class="product-card" data-category="mobility" data-name="wheelchair">
-      <img src="images/wheelchair.jpg" alt="Wheelchair">
+      <img src="images/whelcha.jpg" alt="Wheelchair">
       <div class="product-info">
         <h3>Wheelchair</h3>
-        <p class="description">Durable wheelchair for enhanced mobility and comfort.</p>
+        <p>Durable, foldable, and lightweight for mobility support.</p>
         <p class="price">Ksh 15,000</p>
-        <button class="cart-btn">Add to Cart</button>
+        <button class="cart-btn" data-price="15000">Add to Cart</button>
       </div>
     </div>
 
     <div class="product-card" data-category="visual" data-name="white cane">
-      <img src="images/white-cane.jpg" alt="White Cane">
+      <img src="images/whitecane.jpg" alt="White Cane">
       <div class="product-info">
         <h3>White Cane</h3>
-        <p class="description">Folding cane for the visually impaired with ergonomic grip.</p>
+        <p>Foldable cane with ergonomic grip for the visually impaired.</p>
         <p class="price">Ksh 1,000</p>
-        <button class="cart-btn">Add to Cart</button>
+        <button class="cart-btn" data-price="1000">Add to Cart</button>
       </div>
     </div>
 
     <div class="product-card" data-category="hearing" data-name="hearing aid">
-      <img src="images/hearing-aid.jpg" alt="Hearing Aid">
+      <img src="images/hearingaid.jpg" alt="Hearing Aid">
       <div class="product-info">
         <h3>Hearing Aid</h3>
-        <p class="description">Rechargeable digital hearing aid with background noise cancelation.</p>
+        <p>Rechargeable, background-noise-cancelling digital device.</p>
         <p class="price">Ksh 10,000</p>
-        <button class="cart-btn">Add to Cart</button>
+        <button class="cart-btn" data-price="10000">Add to Cart</button>
       </div>
     </div>
-    <!-- Add more products... -->
   </div>
 </section>
 
-
-
-
-
-
-
-
 <!-- Cart Sidebar -->
-<aside id="cartSidebar" class="cart-sidebar" aria-label="Shopping Cart" aria-hidden="true" role="dialog">
+<aside id="cartSidebar" class="cart-sidebar">
   <h2>Your Cart</h2>
-  <ul id="cartItems" class="cart-items" role="list" aria-live="polite" aria-relevant="additions removals">
-    <!-- Cart items will be injected here dynamically -->
-  </ul>
-  <div class="cart-total" aria-live="polite" aria-atomic="true">
+  <ul id="cartItems"></ul>
+  <div class="cart-total">
     <strong>Total:</strong> Ksh <span id="cartTotal">0</span>
   </div>
-  <button id="clearCartBtn" class="action-btn clear-btn" disabled aria-disabled="true">Clear Cart</button>
-  <button id="proceedPayBtn" class="action-btn pay-btn" disabled aria-disabled="true">Proceed to Pay</button>
-  <button id="closeCartBtn" class="close-btn" aria-label="Close Cart Sidebar">×</button>
+  <button id="clearCartBtn" class="action-btn">Clear Cart</button>
+  <button id="proceedPayBtn" class="action-btn">Proceed to Pay</button>
+  <button id="closeCartBtn" class="close-btn">&times;</button>
 </aside>
 
-
-<!-- Cart Toggle Button -->
-<button id="openCartBtn" class="open-cart-btn" aria-label="Open Cart">
-  🛒 Cart <span id="cartCount" class="cart-count">0</span>
+<!-- Toggle Cart Button -->
+<button id="openCartBtn" class="open-cart-btn">
+  🛒 Cart <span id="cartCount">0</span>
 </button>
-
 
 
       
