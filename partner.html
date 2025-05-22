@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Partner with RKB Foundation</title>
+  <link rel="stylesheet" href="partner.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero partnerships-hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <h1>PARTNER WITH US</h1>
+        <p>Together, we can drive inclusive change and empower persons with disabilities across Kenya and beyond.</p>
+        <a href="contact.html" class="btn hero-btn">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter Buttons -->
+  <div class="partner-filters">
+    <button class="filter-btn active">All</button>
+    <button class="filter-btn">Funding</button>
+    <button class="filter-btn">Expertise</button>
+    <button class="filter-btn">Projects</button>
+    <button class="filter-btn">Sponsorships</button>
+    <button class="filter-btn">CSR</button>
+    <button class="filter-btn">Advocacy</button>
+  </div>
+
+  <!-- Partnership Opportunities -->
+  <section class="partnership-section">
+    <div class="container">
+
+      <div class="partner-card">
+        <h3>Funding & Grants</h3>
+        <p>Support our disability empowerment programs through financial contributions or institutional grants. Your donation goes directly to impactful projects that uplift and transform lives.</p>
+        <a href="contact.html" class="btn">Become a Funder</a>
+      </div>
+
+      <div class="partner-card">
+        <h3>Technical Expertise</h3>
+        <p>Share your professional knowledge in law, education, technology, healthcare, or accessibility design. Your expertise can help improve our advocacy, training, and legal aid programs.</p>
+        <a href="contact.html" class="btn">Offer Expertise</a>
+      </div>
+
+      <div class="partner-card">
+        <h3>Joint Projects & Co-Creation</h3>
+        <p>Collaborate with us on research, policy development, and inclusive innovation. We welcome institutions, universities, and NGOs with shared goals to co-design impactful solutions.</p>
+        <a href="contact.html" class="btn">Start a Project</a>
+      </div>
+
+      <div class="partner-card">
+        <h3>Sponsorships</h3>
+        <p>Partner as a sponsor for events, accessibility equipment, training programs, or community outreach. We recognize sponsors through media coverage and visibility on our platforms.</p>
+        <a href="contact.html" class="btn">Become a Sponsor</a>
+      </div>
+
+      <div class="partner-card">
+        <h3>Equipment & Resource Donation</h3>
+        <p>Donate assistive devices, learning aids, or accessibility tools that support persons with disabilities. Your resources go directly to individuals and communities in need.</p>
+        <a href="contact.html" class="btn">Donate Equipment</a>
+      </div>
+
+      <div class="partner-card">
+        <h3>CSR & Employee Engagement</h3>
+        <p>Align your company’s CSR strategy with disability inclusion. We provide tailored opportunities for employee volunteering, workplace training, and inclusive hiring support.</p>
+        <a href="contact.html" class="btn">Explore CSR Options</a>
+      </div>
+
+      <div class="partner-card">
+        <h3>Media & Advocacy Partners</h3>
+        <p>Use your platform to amplify our mission. Media houses, influencers, and public figures can help us raise awareness and advocate for disability rights and reforms.</p>
+        <a href="contact.html" class="btn">Join the Campaign</a>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    // Animate partner sections on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.partner-card');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.1 });
+      cards.forEach(card => observer.observe(card));
+    });
+  </script>
+
+</body>
+</html>
+
+

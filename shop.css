@@ -7,12 +7,12 @@
   body {
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: #ffffff;
   }
   
  /* Navbar */
 .navbar {
-  background-color: #003f5c;
+  background-color: #022904;
   color: white;
   padding: 1.5rem 0;
   position: relative;
