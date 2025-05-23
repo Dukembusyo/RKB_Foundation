@@ -9,7 +9,6 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
   background-color: #ffffff;
-  color: #1a1a1a;
   padding-bottom: 2rem;
 }
 
@@ -309,7 +308,14 @@ input[type="email"], input[type="password"], input[type="text"] {
   border-top: 3px solid #005437;
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.partner-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .partner-card h3 {
@@ -319,7 +325,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 .partner-card p {
   font-size: 0.95rem;
-  color: #333;
+  color: #f3f3f3; /* changed from #333 to #f3f3f3 for better contrast on dark background */
   margin-bottom: 1rem;
 }
 
@@ -336,19 +342,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 }
 
 .partner-card .btn:hover {
-  background-color: #e55c00;
-}
-
-/* Visibility Animation */
-.partner-card {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
-
-.partner-card.visible {
-  opacity: 1;
-  transform: translateY(0);
+  background-color: #d24e00; /* Slightly darker hover effect */
 }
 
 /* Responsive Typography */
@@ -365,7 +359,6 @@ input[type="email"], input[type="password"], input[type="text"] {
     justify-content: flex-start;
   }
 }
-
 
 
 
