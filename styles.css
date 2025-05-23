@@ -527,6 +527,17 @@ input[type="email"], input[type="password"], input[type="text"] {
 /* leadership profile */
 
 
+/* Section fills full viewport height */
+.leadership-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: white;
+  padding: 2rem;
+}
+
+/* Profile card remains styled as-is */
 .leader-profile {
   display: flex;
   flex-direction: column;
@@ -537,7 +548,10 @@ input[type="email"], input[type="password"], input[type="text"] {
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 100%;
 }
+
 
 .leader-profile img {
   width: 200px;
