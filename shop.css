@@ -727,7 +727,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   
   #accessibility-button {
-    position: fixed;
+    position: absolute;
     right: 20px;
     bottom: 20px;
     background-color: var(--accessible-yellow);

@@ -59,7 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-
+  // Accessibility toggle (High contrast)
+  disabilityToggle.addEventListener('click', () => {
+    document.body.classList.toggle('high-contrast');
+    const isPressed = disabilityToggle.getAttribute('aria-pressed') === 'true';
+    disabilityToggle.setAttribute('aria-pressed', !isPressed);
+  });
+});
   
 
 
@@ -127,8 +133,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+  
 
-  // Accessibility section
+
+
+
+  // accessibility bar
+
+
+
   function toggleToolbar() {
     const toolbar = document.getElementById('accessibility-toolbar');
     toolbar.style.display = toolbar.style.display === 'block' ? 'none' : 'block';
@@ -191,6 +204,6 @@ document.addEventListener("DOMContentLoaded", () => {
     childList: true,
     subtree: true
   });
-  
 
+  
   

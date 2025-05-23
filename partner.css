@@ -473,7 +473,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   #accessibility-toolbar {
-    position: fixed;
+    position: absolute;
     right: 20px;
     bottom: 80px;
     width: 270px;

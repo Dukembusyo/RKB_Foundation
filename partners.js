@@ -1,5 +1,4 @@
- 
- // === script.js ===
+// === script.js ===
 
 document.addEventListener('DOMContentLoaded', function () {
   const navToggle = document.querySelector('.nav-toggle');
@@ -60,35 +59,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // Accessibility toggle (High contrast)
+  disabilityToggle.addEventListener('click', () => {
+    document.body.classList.toggle('high-contrast');
+    const isPressed = disabilityToggle.getAttribute('aria-pressed') === 'true';
+    disabilityToggle.setAttribute('aria-pressed', !isPressed);
+  });
+});
 
 
-// smootscroll
+
+
+ // accessibility bar
 
 
 
-
-
-      document.addEventListener('DOMContentLoaded', () => {
-      const cards = document.querySelectorAll('.partner-card');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) entry.target.classList.add('visible');
-        });
-      }, { threshold: 0.1 });
-      cards.forEach(card => observer.observe(card));
-    });
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- // Accessibility section
   function toggleToolbar() {
     const toolbar = document.getElementById('accessibility-toolbar');
     toolbar.style.display = toolbar.style.display === 'block' ? 'none' : 'block';
@@ -151,6 +136,9 @@ document.addEventListener('DOMContentLoaded', function () {
     childList: true,
     subtree: true
   });
+
+  
+  
   
 
   
