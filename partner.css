@@ -301,12 +301,11 @@ input[type="email"], input[type="password"], input[type="text"] {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
-  background-color: #005437;
 }
 
 /* Partner Cards */
 .partner-card {
-  background: #fff;
+  background: #0f3a2c;
   border-top: 3px solid #005437;
   padding: 1.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -314,7 +313,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 }
 
 .partner-card h3 {
-  color: #005437;
+  color: #f3f3f3;
   margin-bottom: 0.75rem;
 }
 
