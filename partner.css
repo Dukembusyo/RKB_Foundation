@@ -301,6 +301,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
+  background-color: #005437;
 }
 
 /* Partner Cards */

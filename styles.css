@@ -525,7 +525,9 @@ input[type="email"], input[type="password"], input[type="text"] {
 
   
 /* leadership profile */
-
+.leadership-section{
+  width: 100%;
+}
 
 .leader-profile {
   display: flex;
