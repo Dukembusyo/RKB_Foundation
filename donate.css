@@ -130,16 +130,7 @@
   color: white;
 }
 
-.accessibility button {
-  background-color: #00bcd4;
-  color: white;
-  border-radius: 50%;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.2rem;
-  text-align: center;
-  line-height: 2.5rem;
-}
+
 
 /* Modal */
 .modal {
@@ -665,3 +656,124 @@ input[type="email"], input[type="password"], input[type="text"] {
     font-size: 0.85rem;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* accessibility section */
+
+
+
+    :root {
+    --jungle-green: #29AB87;
+    --accessible-yellow: #FFC107;
+    --accessible-border: #ddd;
+  }
+  
+  
+  #accessibility-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--accessible-yellow);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  #accessibility-toolbar {
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    width: 270px;
+    background: white;
+    border: 1px solid var(--accessible-border);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    font-family: inherit;
+    display: none;
+    z-index: 1001;
+    border-radius: 6px;
+  }
+  
+  .toolbar-header {
+    background: var(--jungle-green);
+    color: rgb(155, 120, 120);
+    padding: 10px;
+    font-weight: bold;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
+  .toolbar-content {
+    padding: 10px;
+    color: #111;
+  }
+  
+  .toolbar-content label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+  }
+  
+  .powered {
+    padding: 6px;
+    font-size: 12px;
+    text-align: center;
+    background: #f8f8f8;
+    border-top: 1px solid var(--accessible-border);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+  
+  .no-animations *, .no-animations *::before, .no-animations *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .gentle-contrast *:not(img) {
+    background-color: #f9f9f9 !important;
+    color: #111 !important;
+  }
+  
+  .gentle-contrast header, .gentle-contrast footer {
+    background-color: #1e8e6d !important;
+  }
+  
+  .readable-font *:not(img) {
+    font-family: Verdana, Arial, sans-serif !important;
+  }
+  
+  .highlight-links a,
+  .highlight-links button {
+    background-color: #eefcee !important;
+    outline: 2px solid #29AB87 !important;
+  }
+  
+  .marked-titles h1,
+  .marked-titles h2,
+  .marked-titles h3 {
+    border-bottom: 2px dashed #29AB87;
+    padding-bottom: 4px;
+  }

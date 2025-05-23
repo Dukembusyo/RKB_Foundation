@@ -36,9 +36,9 @@
           About & Mission ▾
         </button>
         <ul class="dropdown-menu" id="dropdown1" role="menu" hidden>
-          <li role="none"><a href="#about-heading" role="menuitem">Our Story</a></li>
-          <li role="none"><a href="#mission" role="menuitem">Mission</a></li>
-          <li role="none"><a href="#leadership" role="menuitem">Leadership</a></li>
+          <li role="none"><a href="index.html#about-heading" role="menuitem">Our Story</a></li>
+          <li role="none"><a href="index.html#mission" role="menuitem">Mission</a></li>
+          <li role="none"><a href="index.html#leadership" role="menuitem">Leadership</a></li>
         </ul>
       </li>
 
@@ -52,7 +52,7 @@
           <li role="none"><a href="donate.html" role="menuitem">Fundraise/a></li>
         </ul>
       </li>
-       <li><a href="donate.html" role="menuitem">Donate</a></li>
+       <li role="none"><a href="donate.html" role="menuitem">Donate</a></li>
 
       <li><a href="shop.html" role="menuitem">shop</a></li>
 
@@ -65,9 +65,7 @@
         <a href="donate.html" class="btn donate-btn" role="menuitem">Donate</a>
       </li>
 
-      <li class="accessibility">
-        <button id="disabilityToggle" aria-label="Toggle high contrast mode" role="menuitem">♿</button>
-      </li>
+
     </ul>
   </div>
 </nav>
@@ -109,6 +107,28 @@
 
       <button type="submit" class="btn submit-btn">Register</button>
     </form>
+  </div>
+</div>
+
+
+<!-- accessibity section -->
+
+<div id="accessibility-button" onclick="toggleToolbar()">♿</div>
+
+<div id="accessibility-toolbar">
+  <div class="toolbar-header">
+    Accessibility Toolbar
+    <span onclick="toggleToolbar()" style="cursor:pointer; float:right;">&times;</span>
+  </div>
+  <div class="toolbar-content">
+    <label><input type="checkbox" onclick="toggleKeyboardNavigation()"> Keyboard Navigation</label>
+    <label><input type="checkbox" onclick="toggleAnimations()"> Disable Animations</label>
+    <label><input type="checkbox" onclick="toggleContrast()"> Contrast</label>
+    <label><input type="checkbox" onclick="increaseText()"> Increase Text</label>
+    <label><input type="checkbox" onclick="decreaseText()"> Decrease Text</label>
+    <label><input type="checkbox" onclick="toggleReadableFont()"> Readable Font</label>
+    <label><input type="checkbox" onclick="markTitles()"> Mark Titles</label>
+    <label><input type="checkbox" onclick="highlightLinks()"> Highlight Links & Buttons</label>
   </div>
 </div>
 
