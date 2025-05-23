@@ -12,7 +12,7 @@
   
 /* Navbar */
 .navbar {
-  background-color: #022904;
+  background-color: #033f06;
   color: white;
   padding: 1.5rem 0;
   position: relative;
@@ -47,7 +47,7 @@
 
 .brand-name {
   font-size: 1.4rem;
-  color: #005baa;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -194,7 +194,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 .submit-btn {
   background-color: #007bff;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1rem;
 }
 
@@ -231,7 +231,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   
   #accessibility-button {
-    position: absolute;
+  
     right: 20px;
     bottom: 20px;
     background-color: var(--accessible-yellow);
