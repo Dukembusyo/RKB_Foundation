@@ -81,7 +81,8 @@ body {
   flex-wrap: wrap;
 }
 
-.nav-menu a, .nav-menu button {
+.nav-menu a,
+.nav-menu button:not(.btn) {
   color: white;
   text-decoration: none;
   background: none;
@@ -91,6 +92,25 @@ body {
   padding: 0.5rem 0.8rem;
   transition: background 0.3s;
 }
+
+
+
+.login-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.register-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.donate-btn {
+  background-color: #e60000;
+  color: white;
+}
+
+
 
 .nav-menu a:hover, .nav-menu button:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -122,32 +142,7 @@ body {
   transition: background 0.3s;
 }
 
-.login-btn {
-  background-color: #ffc107;
-  color: black;
-    padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
 
-.register-btn {
-  background-color: #28a745;
-  color: white;
-    padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.donate-btn {
-  background-color: #e60000;
-  color: white;
-    padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
 
 .accessibility button {
   background-color: #00bcd4;
