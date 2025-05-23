@@ -125,16 +125,28 @@ body {
 .login-btn {
   background-color: #ffc107;
   color: black;
+    padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .register-btn {
   background-color: #28a745;
   color: white;
+    padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .donate-btn {
   background-color: #e60000;
   color: white;
+    padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
 }
 
 .accessibility button {
@@ -421,6 +433,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 
   .about-mission-section {
+    top: -100px;
     background: #f9fafc;
     padding: 80px 20px;
     color: #1b1b1f;
