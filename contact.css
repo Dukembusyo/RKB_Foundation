@@ -1,15 +1,22 @@
-/* GENERAL RESET */
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding-bottom: 2rem;
+}
+
+
+
+
+
 /* Navbar */
 .navbar {
   background-color: #022904;
@@ -231,7 +238,10 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   
   #accessibility-button {
-  
+
+    position: absolute;
+    top: 80%;
+    left: 90%;
     right: 20px;
     bottom: 20px;
     background-color: var(--accessible-yellow);
@@ -247,7 +257,9 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   #accessibility-toolbar {
-    position: fixed;
+    position: absolute;
+    top: 60%;
+    left: 60%;
     right: 20px;
     bottom: 80px;
     width: 270px;
@@ -325,54 +337,72 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 
 
+/* Contact Section Styling */
+.contact-section {
+  margin-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f9f9f9;
+}
 
+/* Form Container */
+.form-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
 
- .contact-section {
-    margin-top: 50px;
-    padding-bottom: 50px;
-  }
-  
-  .form-box {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
-  }
-  
-  .form-box h4 {
-    margin-bottom: 20px;
-  }
-  
-  .submit-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  .submit-btn:hover {
-    background-color: #218838;
-  }
-  
-  .info-box {
-    margin-bottom: 20px;
-  }
-  
-  .social-icons i {
-    font-size: 1.5rem;
-    margin-right: 10px;
-    cursor: pointer;
-    color: #333;
-  }
-  
-  .social-icons i:hover {
-    color: #007bff;
-  }
-  
-  iframe {
-    border-radius: 8px;
-  }
+/* Heading inside form */
+.form-box h4 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Contact Info Box */
+.info-box {
+  margin-bottom: 20px;
+}
+
+/* Social Icons */
+.social-icons i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #333333;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #007bff;
+}
+
+/* Embedded Map */
+iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
 
 
 

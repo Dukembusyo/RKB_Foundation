@@ -452,6 +452,10 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   
   #accessibility-button {
+
+    position: absolute;
+    top: 80%;
+    left: 90%;
     right: 20px;
     bottom: 20px;
     background-color: var(--accessible-yellow);
@@ -467,7 +471,9 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   #accessibility-toolbar {
-    position: fixed;
+    position: absolute;
+    top: 60%;
+    left: 60%;
     right: 20px;
     bottom: 80px;
     width: 270px;

@@ -1,18 +1,25 @@
-/* GENERAL RESET */
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family: 'Segoe UI', sans-serif;
-    line-height: 1.6;
-    color: #ffffff;
-  }
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding-bottom: 2rem;
+}
+
+
+
+
+
 /* Navbar */
 .navbar {
-  background-color: #033f06;
+  background-color: #022904;
   color: white;
   padding: 1.5rem 0;
   position: relative;
@@ -47,7 +54,7 @@
 
 .brand-name {
   font-size: 1.4rem;
-  color: #ffffff;
+  color: #005baa;
   font-weight: 700;
 }
 
@@ -194,7 +201,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 .submit-btn {
   background-color: #007bff;
-  color: rgb(0, 0, 0);
+  color: white;
   font-size: 1rem;
 }
 
@@ -231,7 +238,10 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   
   #accessibility-button {
-  
+
+    position: absolute;
+    top: 80%;
+    left: 90%;
     right: 20px;
     bottom: 20px;
     background-color: var(--accessible-yellow);
@@ -247,7 +257,9 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   #accessibility-toolbar {
-    position: fixed;
+    position: absolute;
+    top: 60%;
+    left: 60%;
     right: 20px;
     bottom: 80px;
     width: 270px;
