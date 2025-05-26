@@ -81,7 +81,7 @@ body {
   flex-wrap: wrap;
 }
 
-.nav-menu a,
+.nav-menu a:not(.btn),
 .nav-menu button:not(.btn) {
   color: white;
   text-decoration: none;
@@ -94,22 +94,9 @@ body {
 }
 
 
-
-.login-btn {
-  background-color: #ffc107;
-  color: black;
+.btn:hover {
+  opacity: 0.9;
 }
-
-.register-btn {
-  background-color: #28a745;
-  color: white;
-}
-
-.donate-btn {
-  background-color: #e60000;
-  color: white;
-}
-
 
 
 .nav-menu a:hover, .nav-menu button:hover {
@@ -142,6 +129,24 @@ body {
   transition: background 0.3s;
 }
 
+.login-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+.register-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.donate-btn {
+  background-color: #e60000;
+  color: white;
+}
+
+.donate-btn:hover {
+  background-color: #cc0000;
+}
 
 
 .accessibility button {
@@ -379,7 +384,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   .caption {
     text-align: center;
     background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+    color: #FFD700;
     padding: 2rem;
     border-radius: 12px;
     max-width: 90%;
@@ -843,7 +848,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 
   .site-footer {
-    background-color: #222;
+    background-color: #024d27;
     color: #f0f0f0;
     padding: 4rem 2rem 2rem;
     font-size: 0.95rem;

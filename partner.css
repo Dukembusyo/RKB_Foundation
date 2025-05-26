@@ -81,7 +81,8 @@ body {
   flex-wrap: wrap;
 }
 
-.nav-menu a, .nav-menu button {
+.nav-menu a:not(.btn),
+.nav-menu button:not(.btn) {
   color: white;
   text-decoration: none;
   background: none;
@@ -91,6 +92,12 @@ body {
   padding: 0.5rem 0.8rem;
   transition: background 0.3s;
 }
+
+
+.btn:hover {
+  opacity: 0.9;
+}
+
 
 .nav-menu a:hover, .nav-menu button:hover {
   background: rgba(255, 255, 255, 0.1);
@@ -136,6 +143,11 @@ body {
   background-color: #e60000;
   color: white;
 }
+
+.donate-btn:hover {
+  background-color: #cc0000;
+}
+
 
 .accessibility button {
   background-color: #00bcd4;
@@ -224,7 +236,6 @@ input[type="email"], input[type="password"], input[type="text"] {
     display: flex;
   }
 }
-
 /* Hero Section */
 .hero {
   background: url("images/partner.jpg") no-repeat center center/cover;
@@ -379,7 +390,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 
 .site-footer {
-    background-color: #222;
+    background-color: #024d27;
     color: #f0f0f0;
     padding: 4rem 2rem 2rem;
     font-size: 0.95rem;
