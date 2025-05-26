@@ -54,7 +54,7 @@ body {
 
 .brand-name {
   font-size: 1.4rem;
-  color: #005baa;
+  color: #D4AF37;
   font-weight: 700;
 }
 
@@ -236,11 +236,14 @@ input[type="email"], input[type="password"], input[type="text"] {
     display: flex;
   }
 }
+
+
+
 /* Hero Section */
 .hero {
   background: url("images/partner.jpg") no-repeat center center/cover;
   padding: 5rem 2rem;
-  color: white;
+  color: #FFD700;
   text-align: center;
   position: relative;
 }
@@ -273,7 +276,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 .hero-btn {
   padding: 0.8rem 1.5rem;
-  background-color:#e55c00;
+  background-color:#FFD700;
   color: white;
   border: none;
   text-decoration: none;
@@ -293,13 +296,13 @@ input[type="email"], input[type="password"], input[type="text"] {
   gap: 0.5rem;
   justify-content: center;
   padding: 2rem 1rem;
-  background-color: #f5f7f4;
+  background-color: #1e5304;
 }
 
 .filter-btn {
   padding: 0.5rem 1rem;
   border: 1px solid #e55c00;
-  background: white;
+  background: rgb(241, 241, 241);
   color: #005437;
   font-weight: 600;
   cursor: pointer;
@@ -345,7 +348,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 .partner-card .btn {
   display: inline-block;
-  background-color: #e55c00;
+  background-color: #FFD700;
   color: #fff;
   padding: 0.5rem 1rem;
   text-decoration: none;

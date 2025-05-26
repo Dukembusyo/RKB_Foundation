@@ -54,7 +54,7 @@ body {
 
 .brand-name {
   font-size: 1.4rem;
-  color: #005baa;
+  color: #D4AF37;
   font-weight: 700;
 }
 
@@ -245,11 +245,12 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 
 
+
 /* ---------------- Hero Section ---------------- */
 
 .shop-hero {
-  background: linear-gradient(135deg, #4a90e2, #50e3c2);
-  color: white;
+  background: linear-gradient(135deg, #dfe2d5, #e6cf00);
+  color: rgb(4, 56, 17);
   padding: 3rem 1rem;
   display: flex;
   justify-content: center;
@@ -284,7 +285,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 .shop-now-btn {
   display: inline-block;
   padding: 0.75rem 1.75rem;
-  background-color: #ff6f61;
+  background-color: #FFD700;
   color: white;
   font-weight: 600;
   border-radius: 30px;
@@ -365,14 +366,14 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 .tab:hover,
 .tab:focus {
-  background-color: #4a90e2;
+  background-color: #bace08;
   color: white;
   outline: none;
   box-shadow: 0 4px 8px rgba(74,144,226,0.4);
 }
 
 .tab.active {
-  background-color: #4a90e2;
+  background-color: #f9fd0e;
   color: white;
   box-shadow: 0 6px 12px rgba(74,144,226,0.6);
 }
@@ -390,7 +391,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 }
 
 #productSearch:focus {
-  border-color: #4a90e2;
+  border-color: #016106;
   outline: none;
   box-shadow: 0 0 8px rgba(74,144,226,0.5);
 }
@@ -541,7 +542,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 }
 
 .action-btn {
-  background-color: #4a90e2;
+  background-color: #dee200;
   border: none;
   color: white;
   font-weight: 700;
@@ -556,7 +557,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 .action-btn:hover,
 .action-btn:focus {
-  background-color: #357ABD;
+  background-color: #6d991a;
   outline: none;
   box-shadow: 0 6px 12px rgba(53,122,189,0.6);
 }
@@ -586,7 +587,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  background-color: #ff6f61;
+  background-color: #d3c60b;
   color: white;
   font-weight: 700;
   border-radius: 50px;

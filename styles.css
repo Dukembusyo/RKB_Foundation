@@ -54,7 +54,7 @@ body {
 
 .brand-name {
   font-size: 1.4rem;
-  color: #005baa;
+  color: #D4AF37;
   font-weight: 700;
 }
 
@@ -447,7 +447,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   .about-header h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #004085;
+    color: #024d27;
   }
   
   .about-header p {
@@ -470,7 +470,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   .column h3 {
     font-size: 1.6rem;
     margin-bottom: 15px;
-    color: #0066cc;
+    color: #024d27;
   }
   
   .column p,
@@ -666,7 +666,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   .impact-number {
     font-size: 3rem;
-    color: #1c7ed6;
+    color: #e6cf06;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
@@ -723,7 +723,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   .event-content h3 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: #1c7ed6;
+    color: #024d27;
   }
   
   .event-content p {
@@ -733,7 +733,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   .read-more {
-    color: #1c7ed6;
+    color: #024d27;
     text-decoration: none;
     font-weight: bold;
     font-size: 0.9rem;
@@ -816,11 +816,11 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   .action-btn.donate {
-    background-color: #1c7ed6;
+    background-color:#FFD700;
   }
   
   .action-btn.join {
-    background-color: #28a745;
+    background-color: #0c6621;
   }
   
   .action-btn.shop {

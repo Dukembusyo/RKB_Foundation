@@ -13,6 +13,10 @@ body {
   padding-bottom: 2rem;
 }
 
+
+
+
+
 /* Navbar */
 .navbar {
   background-color: #022904;
@@ -50,7 +54,7 @@ body {
 
 .brand-name {
   font-size: 1.4rem;
-  color: #005baa;
+  color: #D4AF37;
   font-weight: 700;
 }
 
@@ -242,6 +246,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 
 
+
 /* === Donate Hero Slider === */
 .donate-hero-slider {
     position: relative;
@@ -300,7 +305,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   .btn-donate {
-    background: #f57c00;
+    background: #FFD700;
     color: #fff;
     text-decoration: none;
     padding: 15px 30px;
@@ -366,7 +371,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   .category-card i {
     font-size: 2.5rem;
-    color: #f57c00;
+    color: #FFD700;
     margin-bottom: 15px;
   }
   
@@ -395,7 +400,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   .btn-category {
     display: inline-block;
-    background-color: #f57c00;
+    background-color: #FFD700;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
@@ -444,7 +449,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   }
   
   .tab.active {
-    background: #007bff;
+    background: #FFD700;
     color: white;
     border-color: #007bff;
   }
@@ -533,7 +538,7 @@ input[type="email"], input[type="password"], input[type="text"] {
   
   .support-box .icon {
     font-size: 40px;
-    color: #007bff;
+    color: #FFD700;
     margin-bottom: 15px;
   }
   
@@ -572,7 +577,7 @@ input[type="email"], input[type="password"], input[type="text"] {
 
 
   .cta-donate {
-    background-color: #8d949c;
+    background-color: #FFD700;
     color: white;
     padding: 60px 20px;
     text-align: center;
