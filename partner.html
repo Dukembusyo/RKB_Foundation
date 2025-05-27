@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="partner.css" />
 </head>
 <body>
-
   <nav class="navbar" role="navigation" aria-label="Main Navigation">
   <div class="nav-container">
                <a href="index.html" class="brand" aria-label="Homepage">
@@ -24,12 +23,12 @@
 
       <li class="dropdown" role="none">
         <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown1" role="menuitem">
-          About & Mission ▾
+          About ▾
         </button>
         <ul class="dropdown-menu" id="dropdown1" role="menu" hidden>
           <li role="none"><a href="index.html#about-heading" role="menuitem">Our Story</a></li>
           <li role="none"><a href="index.html#mission" role="menuitem">Mission</a></li>
-          <li role="none"><a href="index.html#leadership" role="menuitem">Leadership</a></li>
+          <li role="none"><a href="index.html#leadership" role="menuitem">Our work</a></li>
         </ul>
       </li>
 
@@ -40,65 +39,34 @@
         <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
           <li role="none"><a href="partner.html" role="menuitem">Partner with us</a></li>
           <li role="none"><a href="contact.html" role="menuitem">Volunter</a></li>
-          <li role="none"><a href="donate.html" role="menuitem">Fundraise/a></li>
+          <li role="none"><a href="donate.html" role="menuitem">Donate</a></li>
         </ul>
       </li>
-       <li role="none"><a href="donate.html" role="menuitem">Donate</a></li>
+          <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown2" role="menuitem">
+          Resources ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
+          <li role="none"><a href="donate.html" role="menuitem">Donate</a></li>
+          <li role="none"><a href="contact.html" role="menuitem">Policies</a></li>
+          <li role="none"><a href="donate.html" role="menuitem">Media Section</a></li>
+          <li role="none"><a href="donate.html" role="menuitem">Research</a></li>
+          <li role="none"><a href="donate.html" role="menuitem">FAQ</a></li>
+        </ul>
+      </li>
 
-      <li><a href="shop.html" role="menuitem">shop</a></li>
+      
 
 
       <li><a href="contact.html" role="menuitem">Contact</a></li>
 
-      <li class="nav-btns">
-        <button id="loginBtn" class="btn login-btn" role="menuitem">Login</button>
-        <button id="registerBtn" class="btn register-btn" role="menuitem">Register</button>
-        <a href="donate.html" class="btn donate-btn" role="menuitem">Donate</a>
-      </li>
 
 
     </ul>
   </div>
 </nav>
-<!-- Login Modal -->
-<div id="loginModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle" hidden>
-  <div class="modal-content">
-    <button class="close-btn" aria-label="Close login form">&times;</button>
-    <h2 id="loginTitle">Login</h2>
-    <form id="loginForm" novalidate>
-      <label for="loginEmail">Email</label>
-      <input type="email" id="loginEmail" name="loginEmail" required />
 
-      <label for="loginPassword">Password</label>
-      <input type="password" id="loginPassword" name="loginPassword" required />
 
-      <button type="submit" class="btn submit-btn">Login</button>
-    </form>
-  </div>
-</div>
-
-<!-- Register Modal -->
-<div id="registerModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="registerTitle" hidden>
-  <div class="modal-content">
-    <button class="close-btn" aria-label="Close register form">&times;</button>
-    <h2 id="registerTitle">Register</h2>
-    <form id="registerForm" novalidate>
-      <label for="registerName">Full Name</label>
-      <input type="text" id="registerName" name="registerName" required />
-
-      <label for="registerEmail">Email</label>
-      <input type="email" id="registerEmail" name="registerEmail" required />
-
-      <label for="registerPassword">Password</label>
-      <input type="password" id="registerPassword" name="registerPassword" required />
-
-      <label for="registerConfirmPassword">Confirm Password</label>
-      <input type="password" id="registerConfirmPassword" name="registerConfirmPassword" required />
-
-      <button type="submit" class="btn submit-btn">Register</button>
-    </form>
-  </div>
-</div>
 
 
 <!-- accessibity section -->
