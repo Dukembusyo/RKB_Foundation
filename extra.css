@@ -203,7 +203,7 @@ body {
 }
 
 .section h2 {
-  color: #ffffff;
+  color: #012e01;
   margin-bottom: 1rem;
 }
 
@@ -224,6 +224,14 @@ body {
 
 .policies a:hover {
   text-decoration: underline;
+}
+
+.gallery h2{
+ color: #026913;
+}
+
+.research {
+  color: #014721;
 }
 
 .gallery-grid {
@@ -252,6 +260,11 @@ body {
   border-radius: 6px;
 }
 
+
+
+.faq {
+  color: #014721;
+}
 .faq-item {
   margin-bottom: 1rem;
   border-radius: 6px;
