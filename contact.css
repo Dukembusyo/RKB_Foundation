@@ -437,7 +437,7 @@ iframe {
 
   .site-footer {
     background-color:rgb(1, 36, 19);
-    color: #f0f0f0;
+    color: #189003;
     padding: 4rem 2rem 2rem;
     font-size: 0.95rem;
     line-height: 1.6;
@@ -450,7 +450,7 @@ iframe {
   }
   
   .site-footer h3, .site-footer h4 {
-    color: #ffffff;
+    color: #14cc00;
     margin-bottom: 1rem;
   }
   
@@ -464,7 +464,7 @@ iframe {
   }
   
   .footer-links ul li a {
-    color: #f0f0f0;
+    color: #149200;
     text-decoration: none;
   }
   
@@ -478,7 +478,7 @@ iframe {
   }
   
   .social-icons a {
-    color: #f0f0f0;
+    color: #035609;
     margin-right: 1rem;
     font-size: 1.4rem;
     transition: color 0.3s;
