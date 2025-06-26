@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .table-container {
+      margin-top: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 12px;
+      
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    td {
+      background-color: #fafafa;
+      text-align: center;
+      max-width: 100px;
+      overflow: hidden;
+    }
+    select, input[type="text"] {
+      padding: 8px;
+      margin: 10px 0;
+      width: 200px;
+    }
+    .filters-container {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+    .filters-container select {
+      width: auto;
+    }
+    .button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 4px;
+      border: none;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+
+    
+    .pagination {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .pagination a {
+    padding: 6px 12px;
+    /* background: #eee; */
+    background: #000;
+    color: #eee;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .pagination a.active {
+    background: #fff;
+    color: #333;
+  }
+
+
+
+  .paginations {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  .paginations a {
+    padding: 6px 12px;
+    /* background: #eee; */
+    background: #000;
+    color: #eee;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  .paginations a.active {
+    background: #fff;
+    color: #333;
+  }
+ 
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Admin Dashboard</h1>
+
+  <!-- Contact Form Feedback Table -->
+  <div class="table-container">
+    <h2>Contact Form Feedback</h2>
+    <table id="feedback-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Subject</th>
+          <th>Message</th>
+          <th>Date Submitted</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% feedback[0].forEach(feed => { %>
+        <tr>
+          <td><%= feed.id %></td>
+          <td><%= feed.name %></td>
+          <td><%= feed.email %></td>
+          <td><%= feed.subject %></td>
+          <td><%= feed.message %></td>
+          <td><%= feed.createdAt %></td>
+          <td><button class="button">View</button></td>
+
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+    <div class="pagination" id="pagination">
+      <% if (currentPage > 1 ) { %>
+        <a href="?feedback=<%= currentPage - 1 %>&transactions=<%= currentP %>" class="page-link">Previous</a>
+      <% } %>
+    
+      <% for (let i = 1; i <= totalPages; i++) { %>
+        <a href="?feedback=<%= i %>&transactions=<%= currentP %>" class="page-link <%= currentPage === i ? 'active' : '' %>">
+          <%= i %>
+        </a>
+      <% } %>
+    
+      <% if (currentPage < totalPages) { %>
+        <a href="?feedback=<%= currentPage + 1 %>&transactions=<%= currentP %>" class="page-link">Next</a>
+      <% } %>
+    </div>
+  
+  </div>
+  
+  <!-- Transactions Table -->
+  <div class="table-container">
+    <h2>Cash Transactions</h2>
+
+    <!-- Filter options -->
+    <div class="filters-container">
+      <input type="text" id="transactionSearch" placeholder="Search Transactions...">
+      <select id="statusFilter">
+        <option value="">All Statuses</option>
+        <option value="completed">Completed</option>
+        <option value="pending">Pending</option>
+        <option value="failed">Failed</option>
+      </select>
+      <button class="button" onclick="applyFilters()">Apply Filters</button>
+    </div>
+
+    <table id="transactions-table">
+      <thead>
+        <tr>
+          
+          <th>Transaction</th>
+          <th>Phone Number</th>
+          <th>Amount</th>
+          <th>Status</th>
+          <th>ResultCode</th>
+          <th>ResultDescription</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% transactions[0].forEach(cash => { %>
+        <tr>
+
+          <td><%= cash.transaction_type %></td>
+          <td><%= cash.phone_number %></td>
+          <td><%= cash.amount %></td>
+
+          <% if(cash.status === 0) { %>
+          <td style="color: #fff; background-color: red;  border-radius: 10px;">FAILED</td>
+          <% } else if(cash.status === 1) { %>
+            <td style="color: #fff; background-color: green; padding: 5 10px; border-radius: 8px;">SUCCESS</td>
+          <% } else { %>
+            <td style="color: #fff; background-color: goldenrod; padding: 5 5px; border-radius: 8px;">PENDING</td>
+          <% } %>
+
+          <td><%= cash.ResultCode %></td>
+          <td><%= cash.ResultDesc %></td>
+          <td><%= cash.createdAt %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+    <div class="paginations">
+      <% if (currentP > 1) { %>
+        <a href="?transactions=<%= currentP - 1 %>&feedback=<%= currentPage %>" class="page-link">Previous</a>
+      <% } %>
+    
+      <% for (let i = 1; i <= totalP; i++) { %>
+        <a href="?transactions=<%= i %>&feedback=<%= currentPage %>" class="page-link <%= currentP === i ? 'active' : '' %>">
+          <%= i %>
+        </a>
+      <% } %>
+    
+      <% if (currentP < totalP) { %>
+        <a href="?transactions=<%= currentP + 1 %>&feedback=<%= currentPage %>" class="page-link">Next</a>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Function to filter transactions based on status and search term
+  function applyFilters() {
+    const statusFilter = document.getElementById("statusFilter").value;
+    const searchTerm = document.getElementById("transactionSearch").value.toLowerCase();
+    const transactions = document.querySelectorAll("#transactions-table tbody tr");
+
+    transactions.forEach(transaction => {
+      const status = transaction.getAttribute("data-status");
+      const transactionId = transaction.cells[0].innerText.toLowerCase();
+
+      // Filter by status and search term
+      if ((statusFilter === "" || status === statusFilter) && (transactionId.includes(searchTerm))) {
+        transaction.style.display = "";
+      } else {
+        transaction.style.display = "none";
+      }
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Empowering youth and women through community-driven development initiatives in Kenya." />
+  <meta name="keywords" content="youth, women, empowerment, development, Kenya, foundation, donations, volunteering" />
+  <meta name="author" content="RKB" />
+  <link rel="icon" type="image/png" href="/images/LOGO.jpeg" />
+  <title> RKB| Disability Foundation| Empowering Change</title>
+  <link rel="stylesheet" href="/css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+   
+
+
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="nav-container">
+               <a href="/" class="brand" aria-label="Homepage">
+            <img src="/images/LOGO.jpeg" alt="EnableLives Logo" class="logo" />
+  <span class="brand-name">RKB</span>
+</a>
+
+    <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+      ☰
+    </button>
+
+    <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="/" role="menuitem">Home</a></li>
+
+      <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown1" role="menuitem">
+          About ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown1" role="menu" hidden>
+          <li role="none"><a href="index.html#about-heading" role="menuitem">Our Story</a></li>
+          <li role="none"><a href="index.html#mission" role="menuitem">Mission</a></li>
+          <li role="none"><a href="index.html#What" role="menuitem">What we do</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown2" role="menuitem">
+          Get Involved ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
+          <li role="none"><a href="/rkb/partner" role="menuitem">Partner with us</a></li>
+          <li role="none"><a href="/rkb/contact" role="menuitem">Volunter</a></li>
+          <li role="none"><a href="/rkb/donate" role="menuitem">Donate</a></li>
+        </ul>
+      </li>
+          <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown2" role="menuitem">
+          Resources ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
+          <li role="none"><a href="/rkb/shop" role="menuitem">Shop</a></li>
+          <li role="none"><a href="extra.html#policies" role="menuitem">Policies</a></li>
+          <li role="none"><a href="extra.html#Gallery" role="menuitem">Media Section</a></li>
+          <li role="none"><a href="extra.html#research" role="menuitem">Research</a></li>
+          <li role="none"><a href="extra.html#FAQ" role="menuitem">FAQ</a></li>
+        </ul>
+      </li>
+
+      
+
+
+      <li><a href="/rkb/contact" role="menuitem">Contact</a></li>
+
+
+
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!-- accessibity section -->
+
+<div id="accessibility-button" onclick="toggleToolbar()">♿</div>
+
+<div id="accessibility-toolbar">
+  <div class="toolbar-header">
+    Accessibility Toolbar
+    <span onclick="toggleToolbar()" style="cursor:pointer; float:right;">&times;</span>
+  </div>
+  <div class="toolbar-content">
+    <label><input type="checkbox" onclick="toggleKeyboardNavigation()"> Keyboard Navigation</label>
+    <label><input type="checkbox" onclick="toggleAnimations()"> Disable Animations</label>
+    <label><input type="checkbox" onclick="toggleContrast()"> Contrast</label>
+    <label><input type="checkbox" onclick="increaseText()"> Increase Text</label>
+    <label><input type="checkbox" onclick="decreaseText()"> Decrease Text</label>
+    <label><input type="checkbox" onclick="toggleReadableFont()"> Readable Font</label>
+    <label><input type="checkbox" onclick="markTitles()"> Mark Titles</label>
+    <label><input type="checkbox" onclick="highlightLinks()"> Highlight Links & Buttons</label>
+  </div>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="form-section">
+      <h2>Contact us</h2>
+      <form method="POST" action="/rkb/contact">
+        <label>Your</label>
+        <div class="input-group">
+          <input type="text" name="name" id="name" placeholder="Enter Your Name" required />
+          <i class="fas fa-user"></i>
+        </div>
+
+        <label>Your email</label>
+        <div class="input-group">
+          <input type="email" name="email" id="email" placeholder="Enter Your Email" required />
+          <i class="fas fa-envelope"></i>
+        </div>
+
+        <label>Subject</label>
+        <div class="input-group">
+          <input type="text" name="subject" id="subject" placeholder="Enter Your Subject" required />
+          <i class="fas fa-folder"></i>
+        </div>
+
+        <label>Your message (optional)</label>
+        <div class="input-group">
+          <textarea name="message" id="message" placeholder="Enter Your Message"></textarea>
+          <i class="fas fa-comments"></i>
+        </div>
+
+        <div class="privacy">
+          <input type="checkbox" />
+          <span>I have read and accepted the <a href="#">Privacy policy</a></span>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="info-section">
+      <h4><a href="#" class="highlight">For queries and feedback</a></h4>
+      <h2>RKB Foundation</h2>
+      <p>Feel free to send a message through the contact form. For direct communication, use the contact details below.</p>
+
+      <div class="info-box">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <div>
+          <h4>Location/Address</h4>
+          <p>????<br>???</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <i class="fas fa-phone icon"></i>
+        <div>
+          <h4>General Enquiries</h4>
+          <p>Phone: +254 759 598 679<br>Mobile: +254 759 598 679<br>Email:  info@rbdfoundation.org</p>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <i class="fas fa-clock icon"></i>
+        <div>
+          <h4>Operation Hours</h4>
+          <p>Monday to Thursday: 08:00 to 17:00<br>Friday: 08:00 to 16:00</p>
+        </div>
+      </div>
+
+      <div class="social-icons">
+        <i class="fab fa-x-twitter"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Map -->
+  <div class="mt-5">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.26368599429!2d36.881421!3d-1.236142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f140876bbddd7%3A0x49ff75c221617f74!2sKenya%20Institute%20of%20Special%20Education%20(KISE)!5e0!3m2!1sen!2ske!4v1653664522134!5m2!1sen!2ske" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</div>
+
+
+
+       <footer class="site-footer" id="footer">
+        <div class="container footer-grid">
+          
+          <!-- Logo & Mission -->
+          <div class="footer-brand">
+            <h3>RKB Disability Foundation</h3>
+            <p>Empowering people with disabilities through inclusion, support, and sustainable development.</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="donate.html">Donate</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="get-involved.html">Get Involved</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <h4>Contact Information: </h4>
+            <h4>For partnerships, support, or more information, please reach out through our official channels:</h4>
+            <p><i class="fas fa-envelope"></i>  info@rbdfoundation.org </p>
+            <p><i class="fas fa-phone-alt"></i> +254 759 598 679</p>
+            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+          </div>
+      
+          <!-- Social Media -->
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100066864233851"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+              <a href="https://x.com/RBDFoundation "><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube" aria-label="YouTube"></i></a>
+            </div>
+          </div>
+      
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; 2025 RKB Foundation. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

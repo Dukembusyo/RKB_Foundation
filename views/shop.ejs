@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Empowering youth and women through community-driven development initiatives in Kenya." />
+  <meta name="keywords" content="youth, women, empowerment, development, Kenya, foundation, donations, volunteering" />
+  <meta name="author" content="RKB" />
+  <link rel="icon" type="image/png" href="/images/LOGO.jpeg" />
+  <title> RKB| Disability Foundation| Empowering Change</title>
+  <link rel="stylesheet" href="/css/shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+  <div class="nav-container">
+               <a href="/" class="brand" aria-label="Homepage">
+            <img src="/images/LOGO.jpeg" alt="EnableLives Logo" class="logo" />
+  <span class="brand-name">RKB</span>
+</a>
+
+    <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+      ☰
+    </button>
+
+    <ul class="nav-menu" id="nav-menu" role="menubar">
+      <li role="none"><a href="/" role="menuitem">Home</a></li>
+
+      <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown1" role="menuitem">
+          About ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown1" role="menu" hidden>
+          <li role="none"><a href="index.html#about-heading" role="menuitem">Our Story</a></li>
+          <li role="none"><a href="index.html#mission" role="menuitem">Mission</a></li>
+          <li role="none"><a href="index.html#What" role="menuitem">what we do</a></li>
+        </ul>
+      </li>
+
+      <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown2" role="menuitem">
+          Get Involved ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
+          <li role="none"><a href="/rkb/partner" role="menuitem">Partner with us</a></li>
+          <li role="none"><a href="/rkb/contact" role="menuitem">Volunter</a></li>
+          <li role="none"><a href="/rkb/donate" role="menuitem">Donate</a></li>
+        </ul>
+      </li>
+          <li class="dropdown" role="none">
+        <button class="drop-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown2" role="menuitem">
+          Resources ▾
+        </button>
+        <ul class="dropdown-menu" id="dropdown2" role="menu" hidden>
+          <li role="none"><a href="/rkb/shop" role="menuitem">Shop</a></li>
+          <li role="none"><a href="extra.html#policies" role="menuitem">Policies</a></li>
+          <li role="none"><a href="extra.html#Gallery" role="menuitem">Media Section</a></li>
+          <li role="none"><a href="extra.html#research" role="menuitem">Research</a></li>
+          <li role="none"><a href="extra.html#FAQ" role="menuitem">FAQ</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/rkb/contact" role="menuitem">Contact</a></li>
+
+    </ul>
+  </div>
+</nav>
+
+<!-- accessibity section -->
+
+<div id="accessibility-button" onclick="toggleToolbar()">♿</div>
+
+<div id="accessibility-toolbar">
+  <div class="toolbar-header">
+    Accessibility Toolbar
+    <span onclick="toggleToolbar()" style="cursor:pointer; float:right;">&times;</span>
+  </div>
+  <div class="toolbar-content">
+    <label><input type="checkbox" onclick="toggleKeyboardNavigation()"> Keyboard Navigation</label>
+    <label><input type="checkbox" onclick="toggleAnimations()"> Disable Animations</label>
+    <label><input type="checkbox" onclick="toggleContrast()"> Contrast</label>
+    <label><input type="checkbox" onclick="increaseText()"> Increase Text</label>
+    <label><input type="checkbox" onclick="decreaseText()"> Decrease Text</label>
+    <label><input type="checkbox" onclick="toggleReadableFont()"> Readable Font</label>
+    <label><input type="checkbox" onclick="markTitles()"> Mark Titles</label>
+    <label><input type="checkbox" onclick="highlightLinks()"> Highlight Links & Buttons</label>
+  </div>
+</div>
+
+
+<!-- Hero Section -->
+<section class="shop-hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Explore Empowering Products</h1>
+      <p>Every item you buy supports persons with disabilities in achieving independence and dignity.</p>
+      <a href="#shop-grid" class="shop-now-btn">Shop Now</a>
+    </div>
+    <div class="hero-image">
+      <img src="/images/diable.jpg" alt="Empowerment Hero Image">
+    </div>
+  </div>
+</section>
+
+<!-- Shop Section -->
+<section class="shop-section" id="shop-grid">
+  <div class="shop-header">
+    <h2>Assistive Equipment Store</h2>
+    <p>Empowering every ability – explore tools that make a difference.</p>
+  </div>
+
+  <!-- Shop Controls -->
+  <div class="shop-controls">
+    <div class="tabs">
+      <button class="tab active" data-category="all">All</button>
+      <button class="tab" data-category="mobility">Mobility</button>
+      <button class="tab" data-category="visual">Visual</button>
+      <button class="tab" data-category="hearing">Hearing</button>
+    </div>
+    <input type="text" id="productSearch" placeholder="Search products...">
+  </div>
+
+  <!-- Product Grid -->
+  <div class="product-grid" id="products">
+    <div class="product-card" data-category="mobility" data-name="wheelchair">
+      <img src="/images/whelcha.jpg" alt="Wheelchair">
+      <div class="product-info">
+        <h3>Wheelchair</h3>
+        <p>Durable, foldable, and lightweight for mobility support.</p>
+        <p class="price">Ksh 15,000</p>
+        <button class="cart-btn" data-price="15000">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="visual" data-name="white cane">
+      <img src="/images/whitecane.jpg" alt="White Cane">
+      <div class="product-info">
+        <h3>White Cane</h3>
+        <p>Foldable cane with ergonomic grip for the visually impaired.</p>
+        <p class="price">Ksh 1,000</p>
+        <button class="cart-btn" data-price="1000">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product-card" data-category="hearing" data-name="hearing aid">
+      <img src="/images/hearingaid.jpg" alt="Hearing Aid">
+      <div class="product-info">
+        <h3>Hearing Aid</h3>
+        <p>Rechargeable, background-noise-cancelling digital device.</p>
+        <p class="price">Ksh 10,000</p>
+        <button class="cart-btn" data-price="10000">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cart Sidebar -->
+<aside id="cartSidebar" class="cart-sidebar">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <div class="cart-total">
+    <strong>Total:</strong> Ksh <span id="cartTotal">0</span>
+  </div>
+  <button id="clearCartBtn" class="action-btn">Clear Cart</button>
+  <button id="proceedPayBtn" class="action-btn">Proceed to Pay</button>
+  <button id="closeCartBtn" class="close-btn">&times;</button>
+</aside>
+
+<!-- Toggle Cart Button -->
+<button id="openCartBtn" class="open-cart-btn">
+  🛒 Cart <span id="cartCount">0</span>
+</button>
+
+      <footer class="site-footer" id="footer">
+        <div class="container footer-grid">
+          
+          <!-- Logo & Mission -->
+          <div class="footer-brand">
+            <h3>RKB Disability Foundation</h3>
+            <p>Empowering people with disabilities through inclusion, support, and sustainable development.</p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/rkb/donate">Donate</a></li>
+              <li><a href="/rkb/shop">Shop</a></li>
+              <li><a href="get-involved.html">Get Involved</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <h4>Contact Information: </h4>
+            <h4>For partnerships, support, or more information, please reach out through our official channels:</h4>
+            <p><i class="fas fa-envelope"></i>  info@rbdfoundation.org </p>
+            <p><i class="fas fa-phone-alt"></i> +254 759 598 679</p>
+            <p><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</p>
+          </div>
+      
+          <!-- Social Media -->
+          <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+               <a href="https://www.facebook.com/profile.php?id=100066864233851"><i class="fab fa-facebook-f" aria-label="Facebook"></i></a>
+              <a href="https://x.com/RBDFoundation "><i class="fab fa-twitter" aria-label="Twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram" aria-label="Instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube" aria-label="YouTube"></i></a>
+            </div>
+          </div>
+      
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; RKB Disability Foundation. All rights reserved.</p>
+        </div>
+      </footer>
+      
+      
+<script src="/js/shop.js"></script>
+</body>
+</html>
