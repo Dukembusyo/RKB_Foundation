@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
             <!-- Include the PayPal SDK -->
-<script src="https://www.paypal.com/sdk/js?client-id=AW1dNfP54jSMyEkB5enY_JInmVisoOaW129mX5J-SCROVczwtblRDDZFSL7q1Xe8nBi1KPuXf0sLhv0d&currency=USD"></script>
+<!-- <script src="https://www.paypal.com/sdk/js?client-id=AW1dNfP54jSMyEkB5enY_JInmVisoOaW129mX5J-SCROVczwtblRDDZFSL7q1Xe8nBi1KPuXf0sLhv0d&currency=USD"></script> -->
 
 </head>
 <body>
@@ -227,9 +227,26 @@
       
         <div class="tab-content" id="paypal">
           <h3>PayPal Donation</h3>
-          <input type="number" id="number" name="number" placeholder="Enter Amount">
+          <!-- <input type="number" id="number" name="number" placeholder="Enter Amount"> -->
+          <!-- <a href="https://www.paypal.com/donate/?hosted_button_id=96GFAWSL5BHDC" target="_blank" rel="noopener noreferrer">Donate</a> -->
+          <div id="donate-button-container">
+            <div id="donate-button"></div>
+            <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+            <script>
+            PayPal.Donation.Button({
+            env:'production',
+            hosted_button_id:'MT9P42MUGVB64',
+            image: {
+            src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+            alt:'Donate with PayPal button',
+            title:'PayPal - The safer, easier way to pay online!',
+            }
+            }).render('#donate-button');
+            </script>
+            </div>
+            
           <!-- Create a container for the PayPal button -->
-          <div id="paypal-button-container"></div>
+          <!-- <div id="paypal-button-container"></div> -->
           <!-- <input type="email" placeholder="Your PayPal Email">
           
           <button class="donate-btn">Donate via PayPal</button> -->
@@ -377,30 +394,30 @@
 <script src="/js/donate.js"></script>
 <script>
  
-   paypal.Buttons({
-    createOrder: function(data, actions) {
-      const pp_amount = document.getElementById('number').value;
-      return actions.order.create({
-        purchase_units: [{
-          amount: {
-            value: pp_amount, // The donation amount (adjust as necessary)
-          },
-        }],
-      });
-    },
-    onApprove: function(data, actions) {
-      return actions.order.capture().then(function(details) {
-        alert('Donation successful! Thank you, ' + details.payer.name.given_name);
-      });
-    },
-    onCancel: function(data) {
-      alert('Donation was canceled');
-    },
-    onError: function(err) {
-      console.error('Error during donation process:', err);
-      alert('There was an error with the donation process.');
-    }
-  }).render('#paypal-button-container');
+  //  paypal.Buttons({
+  //   createOrder: function(data, actions) {
+  //     const pp_amount = document.getElementById('number').value;
+  //     return actions.order.create({
+  //       purchase_units: [{
+  //         amount: {
+  //           value: pp_amount, // The donation amount (adjust as necessary)
+  //         },
+  //       }],
+  //     });
+  //   },
+  //   onApprove: function(data, actions) {
+  //     return actions.order.capture().then(function(details) {
+  //       alert('Donation successful! Thank you, ' + details.payer.name.given_name);
+  //     });
+  //   },
+  //   onCancel: function(data) {
+  //     alert('Donation was canceled');
+  //   },
+  //   onError: function(err) {
+  //     console.error('Error during donation process:', err);
+  //     alert('There was an error with the donation process.');
+  //   }
+  // }).render('#paypal-button-container');
 // Mobile number validation regex
   const validateMobileNumber = (mobileNumber) => {
     const regex = /^254\d{9}$/;
