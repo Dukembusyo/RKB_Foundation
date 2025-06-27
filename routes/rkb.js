@@ -143,7 +143,7 @@ router.get('/shop', async (req, res) => {
 router.post('/contact', async (req, res) => {
   const {name, email, subject, message} = req.body;
 
-  console.log("Contact body", req.body)
+  // console.log("Contact body", req.body)
   try {
     const [rows] = await db.query(`insert into contact(name, email, subject, message) values('${name}', '${email}', '${subject}', '${message}')`);
     if(rows){

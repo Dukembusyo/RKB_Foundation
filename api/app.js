@@ -7,14 +7,14 @@ const port = process.env.PORT || 3000;
 
 // EJS as the view engine
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, '../views'));
 
 // Static files (CSS, JS, images)
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Routes
 // const authRoutes = require('./routes/auth');
-const rkbRoutes = require('./routes/rkb');
+const rkbRoutes = require('../routes/rkb');
 
 // app.use('/auth', authRoutes);
 app.use('/rkb', rkbRoutes);
@@ -43,6 +43,8 @@ app.get('/', async (req, res) => {
 // });
 
 // Start server
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
-});
+// app.listen(port, () => {
+//     console.log(`Server running on port ${port}`);
+// });
+
+module.exports = app;

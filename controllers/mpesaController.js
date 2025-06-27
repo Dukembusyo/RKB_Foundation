@@ -138,7 +138,7 @@ const triggerCallbackManually = async (responseData) => {
     
       const callbackResponse = await axios.post(`${STK_PUSH_STATUS}`, callbackPayload, {headers});
 
-      console.log('Callback successfully triggered:', callbackResponse.data);
+      // console.log('Callback successfully triggered:', callbackResponse.data);
 
       const statusConfirmed = true;
       const statusFailed = false;

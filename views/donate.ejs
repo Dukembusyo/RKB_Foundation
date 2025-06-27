@@ -397,14 +397,21 @@
 <script src="/js/donate.js"></script>
 <script>
 
-      // Function to update the href of the anchor tag based on input value
-      document.getElementById("number").addEventListener("input", function() {
-      var inputValue = document.getElementById("number").value; // Get the input value
+document.getElementById("payp8").addEventListener("click", function(event) {
+    // Prevents the default action of the link
+  // event.preventDefault();  
+    // alert("Link clicked!");
+    var inputValue = document.getElementById("number").value; // Get the input value
       var dynamLink = document.getElementById("payp8"); // Get the anchor tag
 
       // Update the href of the anchor tag dynamically
       dynamLink.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=rkhakali@gmail.com&currency_code=USD&amount=" + encodeURIComponent(inputValue);
-    });
+});
+      // Function to update the href of the anchor tag based on input value
+    //   document.getElementById("number").addEventListener("input", function() {
+    //   var inputValue = document.getElementById("number").value; // Get the input value
+      
+    // });
  
   //  paypal.Buttons({
   //   createOrder: function(data, actions) {
