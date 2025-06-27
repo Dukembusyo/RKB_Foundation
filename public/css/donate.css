@@ -772,3 +772,19 @@ body {
     100% { transform: rotate(360deg); }
   }
 
+  .paypal-button{
+    background-color: #009CDE;
+    color: #ffffff;
+    padding: 10px 20px;
+    /* background: #28a745; */
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .paypal-button:hover {
+    background-color: #0070ba; /* A darker shade for hover effect */
+  }
+

@@ -206,10 +206,10 @@
         <h2>Select Donation Method</h2>
         <div class="tabs">
           <button class="tab active" data-tab="mpesa">M-Pesa</button>
-          <button class="tab" data-tab="paypal">PayPal</button>
-          <button class="tab" data-tab="visa">Visa</button>
+          <button class="tab" data-tab="paypal">PayPal or Debit/Credit Card</button>
+          <!-- <button class="tab" data-tab="visa">Visa</button>
           <button class="tab" data-tab="airtel">Airtel</button>
-          <button class="tab" data-tab="equitel">Equitel</button>
+          <button class="tab" data-tab="equitel">Equitel</button> -->
         </div>
       
         <div class="tab-content active" id="mpesa">
@@ -226,10 +226,13 @@
         </div>
       
         <div class="tab-content" id="paypal">
-          <h3>PayPal Donation</h3>
-          <!-- <input type="number" id="number" name="number" placeholder="Enter Amount"> -->
+          <h3>PayPal or Debit/Credit Card Donation</h3>
+          <input type="number" id="number" name="number" placeholder="Enter Amount ($USD)">
           <!-- <a href="https://www.paypal.com/donate/?hosted_button_id=96GFAWSL5BHDC" target="_blank" rel="noopener noreferrer">Donate</a> -->
-          <div id="donate-button-container">
+          <a id="payp8" href="#" target="_blank">
+            <button class="paypal-button">Pay with PayPal/Card</button>
+          </a>
+          <!-- <div id="donate-button-container">
             <div id="donate-button"></div>
             <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
             <script>
@@ -243,14 +246,14 @@
             }
             }).render('#donate-button');
             </script>
-            </div>
+            </div> -->
             
           <!-- Create a container for the PayPal button -->
           <!-- <div id="paypal-button-container"></div> -->
           <!-- <input type="email" placeholder="Your PayPal Email">
           
           <button class="donate-btn">Donate via PayPal</button> -->
-        </div>
+        <!-- </div> -->
       
         <!-- <div class="tab-content" id="visa">
           <h3>Visa Card Donation</h3>
@@ -393,6 +396,15 @@
       
 <script src="/js/donate.js"></script>
 <script>
+
+      // Function to update the href of the anchor tag based on input value
+      document.getElementById("number").addEventListener("input", function() {
+      var inputValue = document.getElementById("number").value; // Get the input value
+      var dynamLink = document.getElementById("payp8"); // Get the anchor tag
+
+      // Update the href of the anchor tag dynamically
+      dynamLink.href = "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=rkhakali@gmail.com&currency_code=USD&amount=" + encodeURIComponent(inputValue);
+    });
  
   //  paypal.Buttons({
   //   createOrder: function(data, actions) {
