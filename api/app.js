@@ -12,6 +12,9 @@ app.set('views', path.join(__dirname, '../views'));
 // Static files (CSS, JS, images)
 app.use(express.static(path.join(__dirname, '../public')));
 
+// // Serve static files from the '/download' directory
+// app.use(express.static(path.join(__dirname, '../downloads')));
+
 // Routes
 // const authRoutes = require('./routes/auth');
 const rkbRoutes = require('../routes/rkb');

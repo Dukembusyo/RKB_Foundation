@@ -2,6 +2,8 @@ const express = require('express');
 const db = require('../config/config.js');
 const router = express.Router();
 
+const path = require('path');
+
 const {initiateMpesaPayment} = require('../controllers/mpesaController')
 const axios = require('axios');
 // const {League, User} = require('../models');
@@ -51,6 +53,8 @@ const validateMobileNumber = (mobileNumber) => {
   return regex.test(mobileNumber);
 };
 
+// router.use('/download', express.static(path.join(__dirname, '../downloads')));
+
 // Unified donation route
 router.post('/donate', async (req, res) => {
     const { amount, phoneNumber, paymentMethod } = req.body;
@@ -93,12 +97,17 @@ router.get('/donate', async (req, res) => {
 });
 
 router.get('/contact', async (req, res) => {
-  
- res.render('contact');
+  const success = req.query.success === 'true';
+  console.log("Succes server", success)
+ res.render('contact', {success});
 });
 
 router.get('/extra', async (req, res) => {
     res.render('extra');
+});
+
+router.get('/index', async (req, res) => {
+  res.render('index');
 });
   
 router.get('/partner', async (req, res) => {  
@@ -114,6 +123,7 @@ router.get('/dashboard', async (req, res) => {
 
   const offset = (page - 1) * limit;
   const offsets = (pag - 1) * limits
+  try{
 
   const feedback = await db.query(`SELECT * FROM contact ORDER BY createdAt DESC LIMIT ? OFFSET ?`,
     [limit, offset]
@@ -133,7 +143,15 @@ router.get('/dashboard', async (req, res) => {
   const totalTransacts = countTransactions[0][0].count
   const totalP = Math.ceil(totalTransacts / limits);
 
+
+if(feedback && transactions){
   res.render('dashboard', {feedback, transactions, currentPage: page, totalPages, countResult, currentP:pag, totalP, countTransactions});
+}
+} catch (error){
+  console.error("System Error:", error)
+  res.status(500).send('Internal Server Error. Check your network connection and retry. If issue persist, contact admin.')
+}
+  
 })
  
 router.get('/shop', async (req, res) => {
@@ -146,12 +164,20 @@ router.post('/contact', async (req, res) => {
   // console.log("Contact body", req.body)
   try {
     const [rows] = await db.query(`insert into contact(name, email, subject, message) values('${name}', '${email}', '${subject}', '${message}')`);
-    if(rows){
-      res.status(200).json({message:'Your submission has been received'});
+    if(rows.affectedRows > 0){
+      // res.status(200).json({message:'Your submission has been received'});
+
+      // const success = req.query.success === 'true';
+      res.redirect('contact?success=true');
+    }
+    else{
+      res.redirect('contact?success=false');
     }
   } catch (err) {
     console.error('Database error:', err);
-    res.status(500).send('Internal Server Error');
+    // res.status(500).send('Internal Server Error');
+    res.redirect('contact?success=false');
+    
   }
 });
 
